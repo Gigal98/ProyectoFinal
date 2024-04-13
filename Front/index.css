@@ -1,0 +1,152 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Nunito", sans-serif;
+}
+
+body {
+    background-color: #0c0900;
+}
+
+/* Navbar - Structure */
+
+#barra-navegacion {
+    background-color: #9f3647;
+}
+
+#navbar-logo {
+    font-size: 1.4rem;
+    color: black;
+    font-weight: bold;
+}
+
+#barra-navegacion {
+    background-color: #fac81b;
+}
+
+#barra-navegacion  ul li { 
+    font-size: 1.2rem;
+    font-weight: bold;
+    list-style: none;
+    color: black;
+}
+
+#barra-navegacion a { 
+    text-decoration: none;
+    color: black;
+}
+
+#barra-navegacion button {
+    font-weight: bold;
+}
+
+/* Navbar - Effects */
+
+#navbar-logo:hover {
+    animation: agitarse 0.3s infinite ease-in-out;
+}
+
+.navbar-element:hover  {
+    cursor: pointer;
+    animation: aparecerCajasSombreadas 1s infinite ease-in;
+}
+
+
+@keyframes agitarse {
+    50% {
+        transform: rotate(15deg);
+    }
+
+    100% {
+        transform: rotate(-15deg);
+    }
+}
+
+@keyframes aparecerCajasSombreadas {
+    0% {
+        box-shadow: none;
+    }
+
+    50% {
+        box-shadow:  0 0 20px black;
+    }
+
+    100% {
+        box-shadow: none;
+    }
+}
+
+
+/* Hero Section - Structure */
+#hero-section {
+    background-image: url(./Media/hero-section-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 90vh;
+}
+
+#titulo-principal-hero-section {
+    font-size: 4rem;
+    font-style: bold;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 70vw;
+
+
+}
+
+#subtitulo-hero-section {
+    font-size: 2.5rem;
+    font-style: bold;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 30vw;
+}
+
+#boton-hero-section {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+/* Hero Section - Effects */
+
+
+
+/* Search Filter Section - Structure */
+
+#search-filter-section {
+    background-image: url(./Media/movies-background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 50vh;
+
+
+}
+
+#search-filter-head-description {
+    margin-right: 10vw;
+}
+
+#search-filter-texto-filtrar {
+    border: 2px solid black;
+    border-radius: 25px;
+    outline: none;
+    padding: 5px 10px; 
+    width: 200px;
+}
+
+
+#search-filter-boton-buscar {
+    font-weight: bold;
+    border: 2px solid white;
+    border-radius: 25px;
+    outline: none;
+    margin-right: 10vw;
+}
+
+/* Search Filter Section - Effects */
