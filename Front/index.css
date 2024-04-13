@@ -154,4 +154,24 @@ body {
 
 /* Featured Section - Structure */
 
+#featured-section-title {
+    margin-top: 15vh;
+    margin-bottom: 15vh;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+}
+
+
+#featured-section-title::after {
+
+    content: "";
+    width: 50vw;
+    height: 1.5vh;
+    background-color: #fac81b;
+    display: block;
+
+} 
+
+
 /* Featured Section - Effects */
