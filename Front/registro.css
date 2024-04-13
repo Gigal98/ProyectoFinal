@@ -1,0 +1,183 @@
+.registrandonos{
+    
+    margin: 0;
+    padding: 0;
+    font-family: "Nunito", sans-serif; 
+    box-sizing: border-box;
+    background-image: url("./Media/hero-section-bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: transform 1s ease;
+    
+}
+
+.registrandonos:hover{
+    transform:translate()
+}
+
+.headerRegistro{
+    background-color: #fac81b;
+    padding: 5px;
+
+}
+
+@keyframes rotar {
+    50%{
+        transform: scale(0.75);
+    }
+    100%{
+        transform: rotate(100deg);
+    }
+}
+
+@keyframes agitarse {
+    50% {
+        transform: rotate(15deg);
+    }
+
+    100% {
+        transform: rotate(-15deg);
+    }
+}
+
+@keyframes aparecerCajasSombreadas {
+    0% {
+        box-shadow: none;
+    }
+
+    50% {
+        box-shadow:  0 0 20px black;
+    }
+
+    100% {
+        box-shadow: none;
+    }
+}
+
+#iconito{
+    font-size: 30px;
+    box-shadow: 0 4px 8px black;
+    border-radius:30px;
+    animation: rotar 10s infinite
+}
+
+#iconito:hover{
+    cursor: pointer;
+    
+}
+
+#tituloIcono{
+    font-size: 30px;
+    color: black;
+    font-weight: bold;
+    padding: 10px;
+    animation: agitarse 0.3s infinite ease-in-out;;
+}
+
+.main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .sectionRegistro{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: rgb(52,73,94);
+        width: 30%;
+        margin: auto;
+        padding: 40px 20px;
+        border-radius: 20px;
+        #registro{
+                display: flex;
+                width: 200px;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                background-color: #fac81b;
+                color: black;
+                font-family: Arial, Helvetica, sans-serif;
+                border-radius: 5px;
+                
+            }
+
+          
+
+            form{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                width: 100%;
+                padding:40px;
+                input:not(.check,.boton),select{
+                    width: 200px;
+                    margin-bottom: 20px ;
+                    height: 40px;
+                    border-radius: 30px;
+                    box-shadow: 0 4px 8px black;
+                }
+            }
+            .terminos{
+                font-size: 0.8rem;
+                display: flex;
+                align-items: center;
+                margin-bottom: 20px;
+                .textoCheck{
+                    margin-left: 10px;
+                }
+            }
+
+            .boton{
+                width: 87%;
+                box-sizing: content-box;
+                background-color:#fac81b;
+                border: 2px solid #000000;
+                color: #000000;
+                padding: 1rem 1rem;
+                border-radius: 5px;
+                font-size: 1rem;
+                font-weight: 500;
+                border-radius: 10px;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+
+            .ayuda{
+                margin-top:40px;
+                font-size: 1rem;
+                text-decoration: none;
+                color: #1098D3;
+                font-weight:400;
+               
+            } 
+    }
+
+}
+
+.boton:hover{
+    cursor:pointer;
+    animation: aparecerCajasSombreadas 1s infinite ease-in;
+}
+
+#nombre:hover{
+    transform: scale(1.2);
+}
+#apellido:hover{
+    transform: scale(1.2);
+}
+#email:hover{
+    transform: scale(1.2);
+}
+
+#contraseña:hover{
+    transform: scale(1.2);
+}
+
+#fechaNacimiento:hover{
+    transform: scale(1.2);
+}
+
+#select:hover{
+    transform: scale(1.2);
+}
