@@ -7,7 +7,12 @@
     background-image: url("./Media/hero-section-bg.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+    transition: transform 1s ease;
     
+}
+
+.registrandonos:hover{
+    transform:translate()
 }
 
 .headerRegistro{
@@ -16,16 +21,57 @@
 
 }
 
+@keyframes rotar {
+    50%{
+        transform: scale(0.75);
+    }
+    100%{
+        transform: rotate(100deg);
+    }
+}
+
+@keyframes agitarse {
+    50% {
+        transform: rotate(15deg);
+    }
+
+    100% {
+        transform: rotate(-15deg);
+    }
+}
+
+@keyframes aparecerCajasSombreadas {
+    0% {
+        box-shadow: none;
+    }
+
+    50% {
+        box-shadow:  0 0 20px black;
+    }
+
+    100% {
+        box-shadow: none;
+    }
+}
+
 #iconito{
     font-size: 30px;
     box-shadow: 0 4px 8px black;
     border-radius:30px;
+    animation: rotar 10s infinite
+}
+
+#iconito:hover{
+    cursor: pointer;
+    
 }
 
 #tituloIcono{
     font-size: 30px;
     color: black;
     font-weight: bold;
+    padding: 10px;
+    animation: agitarse 0.3s infinite ease-in-out;;
 }
 
 .main{
@@ -43,7 +89,7 @@
         margin: auto;
         padding: 40px 20px;
         border-radius: 20px;
-            #registro{
+        #registro{
                 display: flex;
                 width: 200px;
                 flex-direction: column;
@@ -53,7 +99,10 @@
                 color: black;
                 font-family: Arial, Helvetica, sans-serif;
                 border-radius: 5px;
+                
             }
+
+          
 
             form{
                 display: flex;
@@ -101,8 +150,34 @@
                 color: #1098D3;
                 font-weight:400;
                
-            }
-            
+            } 
     }
 
+}
+
+.boton:hover{
+    cursor:pointer;
+    animation: aparecerCajasSombreadas 1s infinite ease-in;
+}
+
+#nombre:hover{
+    transform: scale(1.2);
+}
+#apellido:hover{
+    transform: scale(1.2);
+}
+#email:hover{
+    transform: scale(1.2);
+}
+
+#contraseña:hover{
+    transform: scale(1.2);
+}
+
+#fechaNacimiento:hover{
+    transform: scale(1.2);
+}
+
+#select:hover{
+    transform: scale(1.2);
 }
