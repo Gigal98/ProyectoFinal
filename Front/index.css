@@ -188,7 +188,7 @@ body {
     background-size: cover;
     background-position: center;
     height: 50vh;
-
+    margin-top: 3em;
 
 }
 
@@ -217,6 +217,12 @@ body {
     height: 2vh;
     width: 80vw;
     background-color: #fac81b;
+}
+
+#boton-administrar-peliculas {
+    font-size: 1.4rem;
+    color: black;
+    font-weight: bold;
 }
 
 /* Motivational Section - Effects */
