@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Webpelis</title>
+    <title>WebPelis</title>
 
     <!-- Logo -->
 
@@ -99,7 +99,7 @@
     <!-- Section - # Section 2  -->
     <!-- Search Filter -->
     <section>
-        <div class="container-fluid d-flex flex-column justify-content-center align-items-end" id="search-filter-section">
+        <div data-aos="fade-up" data-aos-duration="800" data-aos-offset="100" class="container-fluid d-flex flex-column justify-content-center align-items-end aos-init aos-animate" id="search-filter-section">
     
             <h2 id="search-filter-head-description">
                 ¿Qué peli querés <span style="color: #0c0900; font-weight: bold;">ver</span>?
@@ -120,17 +120,17 @@
 
     <!-- Section - # Section 3  -->
     <!-- Movie Cards -->
-    <section id>
-        <div data-aos="" data-aos-duration="" data-aos-offset="" class="aos-init aos-animate" id="featured-section">
+    <section>
 
-            <h3>Películas en Tendencia</h3>
+        <div data-aos="fade-up" data-aos-duration="800" data-aos-offset="300" class="d-flex flex-column justify-content-center align-items-center aos-init aos-animate" id="featured-section">
 
+            <h3 id="featured-section-title">Películas en Tendencia</h3>
 
+            <div class="d-flex flex-wrap flex-row container-fluid card-group row row-cols-1 row-cols-md-3 g-4" id="card-container">
 
+                <!-- Cargaré todas las cards con JS -->
 
-
-
-
+            </div>
         </div>
     </section>
 
@@ -140,10 +140,120 @@
     <!-- Section - # Section 4  -->
     <!-- Motivational Message -->
 
+    <section>
+
+        <div data-aos="fade-up" data-aos-duration="1000" data-aos-offset="400"  id="motivational-section" class="container-fluid d-flex flex-column justify-content-center align-items-center aos-init aos-animate">
+
+            <h1 id="banner-motivational-section" class="mt-4">
+
+                <img src="./Media/webpelis-logo.png" alt="Logo WebPelis" style="width: 2em">
+                    
+                        WebPelis
+                
+
+            </h1>
+
+            <h3 id="titulo-principal-motivational-section">Lo <span style="color: #fac81b; font-weight: bolder;">mejor</span> en
+
+                <br>
+
+                <span style="color: #fac81b; font-weight: bolder;">entretenimiento</span>
+                
+            </h3>
+
+
+
+        </div>
+
+
+    </section>
+
 
 
     <!-- Footer  -->
 
+    <footer class="footer p-5"> 
+        <div class="container"> 
+            <div class="row"> 
+                <div class="col-md-3"> 
+                    <h2 class="row-md-12"><img src="./Media/webpelis-logo.png" alt="Logo WebPelis" style="width: 1.5em">
+                    
+                        WebPelis
+                    </h2> 
+                </div> 
+                <div class="col-md-3"> 
+                    <h5>Sobre Nosotros</h5> 
+                    <p> 
+                        Somos la plataforma líder de streaming de películas 
+                        y nos consolidamos fuertemente en el sector del
+                        entretenimiento, nuestro propósito es llevar emociones
+                        intensas a todos por igual con nuestros filmes. 
+                    </p> 
+                </div> 
+                <div class="col-md-3"> 
+                    <h5>Contáctenos</h5> 
+                    <ul class="list-unstyled"> 
+                        <li>Agencia de Aprendizaje a lo Largo de la Vida</li> 
+                        <li>CABA, Argentina</li> 
+                        <li>Innovación, Ciencia y Tecnología</li> 
+                    </ul> 
+                </div> 
+                <div class="col-md-3"> 
+                    <h5>Nuestras Redes</h5> 
+                    <ul class="list-inline footer-links"> 
+                        <li class="list-inline-item"> 
+                          <a href="#"> 
+                            <i class="bi bi-facebook footer-icon"></i>
+                          </a> 
+                          </li> 
+                        <li class="list-inline-item"> 
+                          <a href="#"> 
+                            <i class="bi bi-instagram footer-icon"></i>
+                          </a> 
+                        </li> 
+                        <li class="list-inline-item"> 
+                          <a href="#"> 
+                            <i class="bi bi-tiktok footer-icon"></i>
+                          </a> 
+                        </li> 
+                        <li class="list-inline-item"> 
+                          <a href="https://github.com/Gigal98/ProyectoFinal" target="_blank" noopener noreferrer> 
+                            <i class="bi bi-github footer-icon"></i>
+                          </a> 
+                        </li> 
+                    </ul> 
+                </div> 
+            </div> 
+            <hr id="yellow-hr-bar"> 
+            <div class="row d-flex align-items-center"> 
+                <div class="col-md-5"> 
+                    <p>© 2024 Codo a Codo - FullStack Java - Proyecto Final</p> 
+                </div> 
+                <div class="col-md-7 text-end"> 
+                    <ul class="list-inline footer-links"> 
+                        <li class="list-inline-item">
+                            <button id="boton-administrar-peliculas" class="btn btn-warning">Administrar Películas</button>
+                        </li>
+                        <li class="list-inline-item"> 
+                            <a href="#" class="text-white"> 
+                                Políticas de Privacidad 
+                            </a> 
+                        </li> 
+                        <li class="list-inline-item"> 
+                            <a href="#" class="text-white"> 
+                                Términos y Condiciones
+                            </a> 
+                        </li> 
+                        <li class="list-inline-item" id="footer-arrow"> 
+                            <a href="#" class="text-white"> 
+                                <i class="bi bi-caret-up-fill"></i>
+                            </a> 
+                        </li> 
+                    </ul> 
+                </div> 
+            </div> 
+        </div> 
+    </footer> 
 
 
 
