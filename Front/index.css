@@ -153,7 +153,91 @@ body {
 
 
 /* Featured Section - Structure */
+#featured-section-title {
+    margin-top: 15vh;
+    margin-bottom: 15vh;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+}
 
+
+#featured-section-title::after {
+
+    content: "";
+    width: 50vw;
+    height: 1.5vh;
+    background-color: #fac81b;
+    display: block;
+
+} 
+
+/* Featured Section - Effects */
+
+/* Motivational Section - Structure */
+
+#motivational-section {
+
+    background-image: url(./Media/movie-blog-header.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 50vh;
+    margin-top: 3em;
+
+}
+
+#titulo-principal-motivational-section {
+
+    font-size: 3.5em;
+    font-style: 900;
+    color: white;
+    text-align: center;
+    width: 45vw;
+
+}
+
+
+#banner-motivational-section {
+    font-size: 3.7rem;
+    font-weight: 900;
+    color: white;
+    text-align: center;
+    width: 30vw;
+}
+
+
+#yellow-hr-bar {
+    height: 2vh;
+    width: 80vw;
+    background-color: #fac81b;
+}
+
+#boton-administrar-peliculas {
+    font-size: 1.4rem;
+    color: black;
+    font-weight: bold;
+}
+
+/* Motivational Section - Effects */
+
+
+/* Footer - Structure */
+
+footer {
+    color: white;
+}
+
+.footer-icon {
+    color: #fac81b;
+}
+
+#footer-arrow {
+    color: white;
+    font-size: 1.5em;
+}
+
+/* Footer - Effects */
 /* Featured Section - Effects */
 
 /* Diseño pagina Registro */

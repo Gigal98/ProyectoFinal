@@ -33,22 +33,27 @@
     
     <main class="main" id="maini">
         <section class="sectionRegistro">
-            <form action="" method="post" >
+            <form method="post" action="#" id="rgistro">
                 <h2 id="registro">Registro</h2>
                 <div>
                     <input type="text" placeholder="Nombre" required id="nombre" name="nombre">
+                    <span id="nombreError"></span>
                 </div>
                 <div>
                     <input type="text" placeholder="Apellido" required id="apellido" name="apellido">
+                    <span id="apellidoError"></span>
                 </div>
                 <div>
                     <input type="email" placeholder="Email" required id="email" name="email">
+                    <span id="emailError"></span>
                 </div>
                 <div>
                     <input type="password" placeholder="Contraseña" required id="contraseña" name="contraseña">
+                    <span id="contraseñaError"></span>
                 </div>
                 <div>
                     <input type="date" placeholder="Fecha de Nacimiento (dd/mm/aaaa)" required id="fechaNacimiento" name="fechaNacimiento">
+                    <span id="fechaError"></span>
                 </div>
 
                 <div>
@@ -78,7 +83,7 @@
                 <label class="textoCheck" for="terminos">Acepto términos y condiciones</label>
             </div>
             <div>
-                <input  class="boton" type="submit" value="Registrarse">
+                <button class="boton" type="submit" value="Registrarse">Registrarse</button>
             </div>
            
             <div > 
@@ -88,6 +93,90 @@
         </section>
 
     </main>
+ <!-- Footer  -->
+
+ <footer class="footer p-5"> 
+    <div class="container"> 
+        <div class="row"> 
+            <div class="col-md-3"> 
+                <h2 class="row-md-12"><img src="./Media/webpelis-logo.png" alt="Logo WebPelis" style="width: 1.5em">
+                
+                    WebPelis
+                </h2> 
+            </div> 
+            <div class="col-md-3"> 
+                <h5>Sobre Nosotros</h5> 
+                <p> 
+                    Somos la plataforma líder de streaming de películas 
+                    y nos consolidamos fuertemente en el sector del
+                    entretenimiento, nuestro propósito es llevar emociones
+                    intensas a todos por igual con nuestros filmes. 
+                </p> 
+            </div> 
+            <div class="col-md-3"> 
+                <h5>Contáctenos</h5> 
+                <ul class="list-unstyled"> 
+                    <li>Agencia de Aprendizaje a lo Largo de la Vida</li> 
+                    <li>CABA, Argentina</li> 
+                    <li>Innovación, Ciencia y Tecnología</li> 
+                </ul> 
+            </div> 
+            <div class="col-md-3"> 
+                <h5>Nuestras Redes</h5> 
+                <ul class="list-inline footer-links"> 
+                    <li class="list-inline-item"> 
+                      <a href="#"> 
+                        <i class="bi bi-facebook footer-icon"></i>
+                      </a> 
+                      </li> 
+                    <li class="list-inline-item"> 
+                      <a href="#"> 
+                        <i class="bi bi-instagram footer-icon"></i>
+                      </a> 
+                    </li> 
+                    <li class="list-inline-item"> 
+                      <a href="#"> 
+                        <i class="bi bi-tiktok footer-icon"></i>
+                      </a> 
+                    </li> 
+                    <li class="list-inline-item"> 
+                      <a href="https://github.com/Gigal98/ProyectoFinal" target="_blank" noopener noreferrer> 
+                        <i class="bi bi-github footer-icon"></i>
+                      </a> 
+                    </li> 
+                </ul> 
+            </div> 
+        </div> 
+        <hr id="yellow-hr-bar"> 
+        <div class="row d-flex align-items-center"> 
+            <div class="col-md-5"> 
+                <p>© 2024 Codo a Codo - FullStack Java - Proyecto Final</p> 
+            </div> 
+            <div class="col-md-7 text-end"> 
+                <ul class="list-inline footer-links"> 
+                    <li class="list-inline-item">
+                        <button id="boton-administrar-peliculas" class="btn btn-warning">Administrar Películas</button>
+                    </li>
+                    <li class="list-inline-item"> 
+                        <a href="#" class="text-white"> 
+                            Políticas de Privacidad 
+                        </a> 
+                    </li> 
+                    <li class="list-inline-item"> 
+                        <a href="#" class="text-white"> 
+                            Términos y Condiciones
+                        </a> 
+                    </li> 
+                    <li class="list-inline-item" id="footer-arrow"> 
+                        <a href="#" class="text-white"> 
+                            <i class="bi bi-caret-up-fill"></i>
+                        </a> 
+                    </li> 
+                </ul> 
+            </div> 
+        </div> 
+    </div> 
+</footer> 
 
     <script>
         AOS.init();
@@ -95,5 +184,6 @@
 
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/scripts.js"></script>
 </body>
 </html>
