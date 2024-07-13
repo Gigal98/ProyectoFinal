@@ -78,108 +78,23 @@ body {
 }
 
 
-/* Hero Section - Structure */
-#hero-section {
-    background-image: url(./Media/hero-section-bg.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    height: 90vh;
-}
+/* Movie Banner - Structure */
 
-#titulo-principal-hero-section {
-    font-size: 4rem;
-    font-style: bold;
-    color: white;
-    background-color: rgba(0, 0, 0, 0.1);
-    text-align: center;
-    width: 70vw;
-
-
-}
-
-#subtitulo-hero-section {
-    font-size: 2.5rem;
-    font-style: bold;
-    color: white;
-    background-color: rgba(0, 0, 0, 0.1);
-    text-align: center;
-    width: 30vw;
-}
-
-#boton-hero-section {
-    font-size: 1.5rem;
-    font-weight: bold;
-}
-
-/* Hero Section - Effects */
-
-
-
-/* Search Filter Section - Structure */
-
-#search-filter-section {
-    background-image: url(./Media/movies-background.jpg);
+#movie-banner {
+    background-image: url(./Media/fallout-tv-show.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     height: 50vh;
-
+    background-color: rgba(0, 0, 0, 0.5);
 
 }
 
-#search-filter-head-description {
-    margin-right: 10vw;
-}
-
-#search-filter-texto-filtrar {
-    border: 2px solid black;
-    border-radius: 25px;
-    outline: none;
-    padding: 5px 10px; 
-    width: 200px;
-}
 
 
-#search-filter-boton-buscar {
-    font-weight: bold;
-    border: 2px solid white;
-    border-radius: 25px;
-    outline: none;
-    margin-right: 10vw;
-}
-
-/* Search Filter Section - Effects */
 
 
-/* Featured Section - Structure */
 
-#featured-section-title {
-    margin-top: 15vh;
-    margin-bottom: 15vh;
-    font-weight: bold;
-    color: white;
-    text-align: center;
-}
-
-
-#featured-section-title::after {
-
-    content: "";
-    width: 50vw;
-    height: 1.5vh;
-    background-color: #fac81b;
-    display: block;
-
-} 
-
-
-.card:hover {
-    cursor: pointer;
-}
-
-
-/* Featured Section - Effects */
 
 
 
@@ -237,6 +152,7 @@ body {
 
 footer {
     color: white;
+    z-index: 999;
 }
 
 .footer-icon {
@@ -247,5 +163,3 @@ footer {
     color: white;
     font-size: 1.5em;
 }
-
-/* Footer - Effects */

@@ -133,6 +133,25 @@ const peliculas = [
 
 ]
 
+// Función para redirigir al hacer clic en una tarjeta
+const redirigir = () => {
+    // Selecciona todas las tarjetas
+    const tarjetas = document.querySelectorAll('.tarjeta-seleccion');
+    
+    // Agrega un event listener a cada tarjeta
+    tarjetas.forEach(tarjeta => {
+        tarjeta.addEventListener('click', () => {
+            // Obtiene la URL de la tarjeta que se va a redirigir
+            const url = "./movie1.html";
+            // Redirecciona a la URL
+            window.location.href = url;
+
+            
+
+        });
+    });
+}
+
 
 // Función para cargar todas las tarjetas de cada película, contemplando el uso de Bootstrap.
 
@@ -147,7 +166,7 @@ const cargarPeliculas = () => {
         const generos = pelicula.generos.join(', ');
         const tarjeta =
         `
-    <div class="card h-100 w-100">
+    <div class="card h-100 w-100 tarjeta-seleccion">
         <img src="${pelicula.url}" class="card-img-top img-fluid" alt="${pelicula.nombre}">
             <div class="card-body d-flex justify-content-between flex-column">
                 <h5 class="card-title">${pelicula.nombre}</h5>
@@ -163,6 +182,8 @@ const cargarPeliculas = () => {
         contenedorPeliculas.appendChild(nuevaPelicula);
     }
 
+    redirigir();
+
 }
 
 
@@ -170,4 +191,5 @@ const cargarPeliculas = () => {
 document.addEventListener('DOMContentLoaded', ( evento ) => {
     cargarPeliculas();
     // Más adelante podemos agregar más funcionalidad... como filtrar por nombre de película, etc.
+
 })

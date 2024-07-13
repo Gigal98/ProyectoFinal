@@ -1,0 +1,101 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Nunito", sans-serif;
+}
+
+body {
+    background-color: #0c0900;
+    /*background-image: url("./Media/hero-section-bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: transform 1s ease;*/
+}
+
+/* Navbar - Structure */
+
+#navbar-logo {
+    font-size: 1.4rem;
+    color: black;
+    font-weight: bold;
+}
+
+header nav {
+    background-color: #fac81b;
+}
+
+header nav ul li { 
+    font-size: 1.2rem;
+    font-weight: bold;
+    list-style: none;
+    color: black;
+}
+
+header nav a { 
+    text-decoration: none;
+    color: black;
+}
+
+header nav button.btn {
+    font-weight: bold;
+    font-family: "Nunito", sans-serif;
+}
+
+/* Navbar - Effects */
+
+#navbar-logo:hover {
+    animation: agitarse 0.3s infinite ease-in-out;
+}
+
+.navbar-element:hover  {
+    cursor: pointer;
+    animation: aparecerCajasSombreadas 1s infinite ease-in;
+}
+
+header {
+    background-color: #fac81b;
+}
+
+@keyframes rotar {
+    50%{
+        transform: scale(0.75);
+    }
+    100%{
+        transform: rotate(100deg);
+    }
+}
+
+@keyframes agitarse {
+    50% {
+        transform: rotate(15deg);
+    }
+
+    100% {
+        transform: rotate(-15deg);
+    }
+}
+
+@keyframes aparecerCajasSombreadas {
+    0% {
+        box-shadow: none;
+    }
+
+    50% {
+        box-shadow: 0 0 20px black;
+    }
+
+    100% {
+        box-shadow: none;
+    }
+}
+
+/* Películas */
+
+main {
+    margin-top: 1rem;
+}
+
+.card {
+    cursor: pointer;
+}
